@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+    "name": "Theme Show",
+    "version": "1.1",
+    "description": "Automatically cycle through installed Firefox themes.",
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "themeshow@fartsol.de"
+        }
+    },
+    "permissions": [
+        "management",
+        "alarms",
+        "storage"
+    ],
+    "background": {
+        "scripts": [
+            "themeShow.js"
+        ],
+        "type": "module"
+    },
+    "browser_action": {
+        "default_title": "Theme Show",
+        "default_popup": "popup/choose_themes.html"
+    }
+}
